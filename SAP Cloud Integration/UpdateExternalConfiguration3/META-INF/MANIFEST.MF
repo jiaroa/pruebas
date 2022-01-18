@@ -33,7 +33,7 @@ Origin-Bundle-Name: Update External Configuration - Nombre con Espacio
  s
 SAP-RuntimeProfile: iflmap
 Bundle-Name: Update External Configuration - Nombre con Espacios
-Bundle-Version: 1.0.0
+Bundle-Version: 1.0.1
 SAP-NodeType: IFLMAP
 SAP-BundleType: IntegrationFlow
 Import-Service: com.sap.esb.webservice.audit.log.AuditLogger,com.sap.e
