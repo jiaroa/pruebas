@@ -1,0 +1,75 @@
+Manifest-Version: 1.0
+Bundle-Description: 
+Bundle-SymbolicName: com.sap.GS.Spain.SII.Communicate.Canary;singleton
+ :=true
+Origin-Bundle-SymbolicName: com.sap.GS.Spain.SII.Communicate.Canary
+Bundle-ManifestVersion: 2
+Origin-Bundle-Version: 1.1.3
+Import-Package:  javax.sql, org.springframework.transaction.support, o
+ rg.springframework.jdbc.datasource, com.sap.esb.webservice.one.way, o
+ rg.mozilla.javascript, org.apache.cxf.databinding, org.apache.cxf.bin
+ ding.soap.interceptor, org.apache.cxf.jaxb, org.codehaus.groovy.refle
+ ction, org.codehaus.groovy.runtime.callsite, org.codehaus.groovy.runt
+ ime.typehandling, org.codehaus.groovy.runtime, groovy.lang, org.codeh
+ aus.groovy.jsr223, com.sap.gateway.ip.core.customdev.util, com.sap.ga
+ teway.ip.core.customdev.logging, com.sap.gateway.ip.core.customdev.pr
+ ocessor, com.sap.it.op.agent.trace.cxf, com.sap.esb.size.limiter, com
+ .sap.esb.camel.webservice.endpoint.configurer, com.sap.esb.webservice
+ .security.crypto.api, com.sap.esb.webservice.policy.alternative.selec
+ tor, org.apache.cxf.ws.security.wss4j, org.apache.wss4j.common.crypto
+ , javax.security.auth.callback, com.sap.esb.camel.jdbc.idempotency.re
+ org, com.sap.it.iflow.model.runtime, com.sap.it.iflow.model, com.sap.
+ sod.utils.idoc.soap.interceptors, com.sap.sod.utils.soap.processors, 
+ com.sap.esb.camel.jdbc.inprogress.repository, com.sap.esb.camel.jdbc.
+ idempotency.repository, com.sap.esb.camel.security.cms, com.sap.esb.c
+ amel.endpoint.configurator.api, org.apache.camel.processor.idempotent
+ .jdbc, org.apache.camel.spi, com.sap.esb.camel.webservice.cxfbinding,
+  com.sap.esb.camel.mpl.access, com.sap.esb.camel.eip.splitter, com.sa
+ p.esb.camel.xmljson, com.sap.it.op.ed, com.sap.it.op.agent.ed.plugins
+ .camel.api, com.sap.esb.webservice.authorization.supplier.api, org.ap
+ ache.cxf.interceptor.security, net.sf.saxon.xpath, net.sf.saxon,com.s
+ ap.esb.application.services.cxf.interceptor,com.sap.esb.security,com.
+ sap.it.op.agent.api,com.sap.it.op.agent.collector.camel,com.sap.it.op
+ .agent.collector.cxf,com.sap.it.op.agent.mpl,com.sap.sod.utils.cxf.in
+ terceptors,com.sap.sod.utils.encoding.processors,com.sap.sod.utils.id
+ oc.soap,com.sap.sod.utils.soap,com.sap.sod.utils.idoc.soap.processors
+ ,javax.jms,javax.jws,javax.wsdl,javax.xml.bind.annotation,javax.xml.n
+ amespace,javax.xml.ws,org.apache.camel;version="2.8",org.apache.camel
+ .builder;version="2.8",org.apache.camel.builder.xml;version="2.8",org
+ .apache.camel.component.cxf,org.apache.camel.model;version="2.8",org.
+ apache.camel.processor;version="2.8",org.apache.camel.processor.aggre
+ gate;version="2.8",org.apache.camel.spring.spi;version="2.8",org.apac
+ he.commons.logging,org.apache.cxf.binding,org.apache.cxf.binding.soap
+ ,org.apache.cxf.binding.soap.spring,org.apache.cxf.bus,org.apache.cxf
+ .bus.resource,org.apache.cxf.bus.spring,org.apache.cxf.buslifecycle,o
+ rg.apache.cxf.catalog,org.apache.cxf.configuration.jsse,org.apache.cx
+ f.configuration.spring,org.apache.cxf.endpoint,org.apache.cxf.headers
+ ,org.apache.cxf.interceptor,org.apache.cxf.management.counters,org.ap
+ ache.cxf.message,org.apache.cxf.phase,org.apache.cxf.resource,org.apa
+ che.cxf.service.factory,org.apache.cxf.service.model,org.apache.cxf.t
+ ransport,org.apache.cxf.transport.common.gzip,org.apache.cxf.transpor
+ t.http,org.apache.cxf.transport.http.policy,org.apache.cxf.workqueue,
+ org.apache.cxf.ws.rm.persistence,org.apache.cxf.wsdl11,org.osgi.frame
+ work;version="1.6.0",org.osgi.service.blueprint;version="[1.0.0,2.0.0
+ )",org.slf4j;version="1.6",org.springframework.beans.factory.config;v
+ ersion="3.0",com.sap.aii.ib.bom.flib.types,com.sap.aii.mapping.api,co
+ m.sap.aii.mappingtool.flib3,com.sap.aii.mappingtool.flib7,com.sap.aii
+ .mappingtool.tf3,com.sap.aii.mappingtool.tf3.rt,com.sap.aii.mappingto
+ ol.tf7,com.sap.aii.mappingtool.tf7.rt,com.sap.aii.mappingtool.tfapi,c
+ om.sap.esb.webservice.audit.log
+Origin-Bundle-Name: Communicate to Canary Islands
+SAP-RuntimeProfile: iflmap
+Bundle-Name: Communicate to Canary Islands
+Bundle-Version: 1.1.3
+Bundle-ClassPath: .
+SAP-NodeType: IFLMAP
+Origin-ModifiedDate: 1636963688686
+Import-Service:  com.sap.esb.camel.security.cms.SignatureSplitter;mult
+ iple:=false, org.apache.cxf.ws.rm.persistence.RMStore;multiple:=false
+ , javax.sql.DataSource;multiple:=false;filter="(dataSourceName=defaul
+ t)", com.sap.esb.security.TrustManagerFactory;multiple:=false, com.sa
+ p.esb.security.KeyManagerFactory;multiple:=false, com.sap.esb.camel.e
+ ndpoint.configurator.api.EndpointConfigurator;multiple:=false;filter=
+ "(endpointType=SFTP)",com.sap.esb.webservice.audit.log.AuditLogger 
+SAP-BundleType: IntegrationFlow
+

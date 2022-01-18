@@ -1,0 +1,14 @@
+#Tue Jan 18 12:54:20 UTC 2022
+MaxAttachmentSize=0
+ERP_userRole_44=ESBMessaging.send
+SubjectDN=
+usageMode=TEST
+reportTo=Spain
+MaxBodySize=10000
+ERP_senderAuthType_185=RoleBased
+loggingEnabled=YES
+customAdapter=NO
+addNiftoKeyAlias=NO
+ERPOutgoingAddress=/SpainSIICanaryCommunicate
+IssuerDN=
+keyAliasSuffix=spainsiiprivatekey
